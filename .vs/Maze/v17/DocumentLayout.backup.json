@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mohamed\\source\\repos\\Day4\\MazeBouns\\Maze\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\source\\repos\\Day4\\MazeBouns\\Maze\\Maze.vcxproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Maze.vcxproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\source\\repos\\Day4\\MazeBouns\\Maze\\Maze.vcxproj.filters||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Maze.vcxproj.filters||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Mohamed\\source\\repos\\Day4\\MazeBouns\\Maze\\Maze.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Maze.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Maze.vcxproj.user",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\Day4\\MazeBouns\\Maze\\Maze.vcxproj.user",
+              "RelativeDocumentMoniker": "Maze.vcxproj.user",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\Day4\\MazeBouns\\Maze\\Maze.vcxproj.user",
+              "RelativeToolTip": "Maze.vcxproj.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2024-10-31T14:20:29.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Maze.vcxproj.filters",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\Day4\\MazeBouns\\Maze\\Maze.vcxproj.filters",
+              "RelativeDocumentMoniker": "Maze.vcxproj.filters",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\Day4\\MazeBouns\\Maze\\Maze.vcxproj.filters",
+              "RelativeToolTip": "Maze.vcxproj.filters",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-31T14:20:28.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Maze.cpp",
+              "DocumentMoniker": "C:\\Users\\Mohamed\\source\\repos\\Day4\\MazeBouns\\Maze\\Maze.cpp",
+              "RelativeDocumentMoniker": "Maze.cpp",
+              "ToolTip": "C:\\Users\\Mohamed\\source\\repos\\Day4\\MazeBouns\\Maze\\Maze.cpp",
+              "RelativeToolTip": "Maze.cpp",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAFEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-31T14:17:57.375Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
