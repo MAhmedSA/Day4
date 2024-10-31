@@ -1,7 +1,10 @@
 #include <iostream>
 #include<string>
 #include<vector>
+#include"ComplexNumber.h"
 using namespace std;
+int ComplexNumber::counter = 0;
+/*
 int counter=0;
 int counter_tree = 0;
 
@@ -162,8 +165,25 @@ struct Students {
 
 
 };
+*/
+
+ComplexNumber add(ComplexNumber c1, ComplexNumber c2) {
+    ComplexNumber res = ComplexNumber();
+    res.real = c1.real + c2.real;
+    res.img = c1.img + c2.img;
+    return res;
+}
+
+ComplexNumber sub(ComplexNumber c1, ComplexNumber c2) {
+    ComplexNumber res= ComplexNumber();
+    res.real = c1.real - c2.real;
+    res.img = c1.img - c2.img;
+    return res;
+}
+
 int main()
 {
+    /*
     int ch;
     cout << "Please Enter Your Number to 1.Queue 2.Tree \n ";
     cin >> ch;
@@ -206,7 +226,42 @@ int main()
             t.AddNode(&n4, t.root);
             t.AddNode(&n3, t.root);
             cout << t.FindStudent(6, t.root);
-        }
+        }*/
+    {
+        ComplexNumber object1 = ComplexNumber();
+        ComplexNumber res1 = ComplexNumber();
+        ComplexNumber res2 = ComplexNumber();
+        cout << " \n Current Number Of objects :   " << ComplexNumber::counter << "\n";
+        ComplexNumber object2 = ComplexNumber(15, 16);
+        cout << " \n Current Number Of objects :   " << ComplexNumber::counter << "\n";
+        ComplexNumber object3 = ComplexNumber(20, 10, "Constructor3");
+        cout << "\n";
+
+        object1.set();
+        cout << " \n Current Number Of objects :   " << ComplexNumber::counter << "\n";
+        cout << "First Number\n ";
+
+        object1.get();
+
+        cout << "Secound Number\n ";
+
+        object2.get();
+        cout << "\n";
+
+        res1 = add(object1, object2);
+        cout << " After Add Operation \n  ";
+        res1.displayRes();
+
+        res2 = sub(object1, object2);
+        cout << " After Sub Operation \n  ";
+        res2.displayRes();
+        cout << " \n Current Number Of objects :   " << ComplexNumber::counter << "\n";
+    
+    }
+
+    cout << " \n Current Number Of objects :   " << ComplexNumber::counter << "\n";
+        
+   
     
 }
 
