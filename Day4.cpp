@@ -187,6 +187,19 @@ int main()
     ComplexNumber n1(6, 5);
     ComplexNumber n2(5, 4);
     
+    ComplexNumber r;
+    r= n1++;
+    n1.displayRes();
+    r.displayRes();
+    r = n2--;
+    n2.displayRes();
+    r.displayRes();
+    r = ++n2;
+    n2.displayRes();
+    r.displayRes();
+    r = --n1;
+    n1.displayRes();
+    r.displayRes();
     ComplexNumber res1 , res2;
     
     res1 = n1 + n2;

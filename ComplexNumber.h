@@ -41,6 +41,39 @@ public:
 
     }
 
+    ComplexNumber& operator  ++() {
+        real++;
+        img++;
+
+        return *this;
+    
+    }
+    ComplexNumber operator  ++(int) {
+        ComplexNumber temp=*this;
+        
+        ++real;
+        ++img;
+        
+        return temp;
+
+    }
+
+    ComplexNumber& operator  --() {
+        real--;
+        img--;
+
+        return *this;
+
+    }
+
+   ComplexNumber operator  --(int) {
+       ComplexNumber temp = *this;
+        --real;
+        --img;
+        return temp;
+
+    }
+
     ComplexNumber operator -(ComplexNumber n) {
         
         ComplexNumber s(0,0);
