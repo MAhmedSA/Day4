@@ -3,7 +3,9 @@
 #include<vector>
 #include"ComplexNumber.h"
 using namespace std;
-int ComplexNumber::counter = 0;
+
+//int ComplexNumber::counter = 0;
+
 /*
 int counter=0;
 int counter_tree = 0;
@@ -167,6 +169,7 @@ struct Students {
 };
 */
 
+/*
 ComplexNumber add(ComplexNumber c1, ComplexNumber c2) {
     ComplexNumber res = ComplexNumber();
     res.real = c1.real + c2.real;
@@ -180,10 +183,118 @@ ComplexNumber sub(ComplexNumber c1, ComplexNumber c2) {
     res.img = c1.img - c2.img;
     return res;
 }
+*/
+
+struct item {
+    string itemName;
+    float price;
+    int quantity;
+};
+
+
+class People {
+public :
+    string name;
+    int age;
+    string addres;
+    void setIfo(string n, int a, string add){
+        name = n;
+        age = a;
+        addres = add;
+    }
+
+};
+
+//Inhertanc
+class Employee :public People {
+
+public: 
+    
+    int id;
+    float salary;
+    
+    void setIfo(string n, int a, string add, int num,float s) {
+        name = n;
+        age = a;
+        addres = add;
+        id = num;
+        salary = s;
+    }
+    
+
+};
+
+class Customer :public People {
+
+public:
+    vector<item> purchased;
+
+};
+
+
+class Manager: public Employee {
+    
+public:
+    //Association( manager can manage groups of employee);
+    vector<Employee*> employees;
+};
+
+class Company {
+
+public:
+    string name;
+
+    vector<string> departmentName;
+
+    //Composition
+
+    vector<Employee> employees;
+    
+    vector<Manager> managers;
+    //aggregation
+    vector<Customer*> customers;
+
+    
+
+
+};
+
 
 int main()
 {
+    item car1,car2;
+    car1.itemName = "Z-4";
+    car1.price = 6000000;
+    car1.quantity = 1;
+    car2.itemName = "M-8";
+    car2.price = 9000000;
+    car2.quantity = 1;
 
+    Employee e1,e2;
+
+    e1.setIfo("Mostafa", 25, "204_Street_fisal", 2020, 6500);
+    e2.setIfo("mohamed", 35, "200_NaserCity", 2015, 15000);
+    
+    Manager m1;
+    m1.setIfo("Kamel", 60, "Unkown", 8585, 70000);
+    m1.employees = { &e1,&e2 };
+   
+    Customer c1, c2;
+    c1.setIfo("karem", 45, "Mostafa_Elnhas");
+    c1.purchased = { car1 };
+    c2.setIfo("adel", 50, "Masr_ElGdeda");
+    c2.purchased = { car2 };
+
+    Company co1;
+    co1.name = "BMW";
+    co1.customers = { &c1, &c2 };
+    co1.employees = { e1,e2 };
+    co1.departmentName = { "Finance" ,"HR"};
+
+    cout << "Name Of Manger For  " << co1.name << " is " << m1.name << " \n";
+    cout << "Employees are managed from " << m1.name << " are " << (m1).employees[0]->name << " and " << (m1).employees[1]->name << " \n";
+   
+    /*
     ComplexNumber n1(6, 5);
     ComplexNumber n2(5, 4);
     
