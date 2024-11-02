@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+
+
 void ComplexNumber::set() {
 
 	cout << "Enter First: ";

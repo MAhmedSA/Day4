@@ -31,8 +31,44 @@ public:
     }
     ~ComplexNumber() {
         ComplexNumber::counter--;
-        cout << "\n From Our DConstructor \n";
     }
+
+    ComplexNumber operator +(ComplexNumber n) {
+        ComplexNumber s(0,0);
+        s.real = real + n.real;
+        s.img = img + n.img;
+        return s;
+
+    }
+
+    ComplexNumber operator -(ComplexNumber n) {
+        
+        ComplexNumber s(0,0);
+        s.real = real - n.real;
+        s.img = img - n.img;
+        return s;
+    }
+
+    bool operator ==(ComplexNumber n) {
+        if (n.real == real && n.img == img)
+        {
+            return true;
+        }
+        return false;    
+    }
+
+    bool operator !=(ComplexNumber n) {
+        if (n.real != real || n.img != img)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    operator int(){
+         return real + img;
+    }
+    
     void displayRes();
     void set();
     void get();

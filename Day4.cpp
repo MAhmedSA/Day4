@@ -183,6 +183,31 @@ ComplexNumber sub(ComplexNumber c1, ComplexNumber c2) {
 
 int main()
 {
+
+    ComplexNumber n1(6, 5);
+    ComplexNumber n2(5, 4);
+    
+    ComplexNumber res1 , res2;
+    
+    res1 = n1 + n2;
+
+    res2 = n1 - n2;
+
+    cout << "+ Operator OverLoading\n";
+    res1.displayRes();
+    cout << "- Operator OverLoading\n";
+    res2.displayRes();
+
+    bool equal,notEqual;
+    equal = n1 == n2;
+    notEqual = n1 != n2;
+
+    cout <<"  n1==n2 ->  " << equal<<"\n";
+
+    cout << "  n1!=n2 ->  " << notEqual << "\n";
+
+    cout << "Casting Operator   " << n1 << "\n" ;
+
     /*
     int ch;
     cout << "Please Enter Your Number to 1.Queue 2.Tree \n ";
@@ -226,7 +251,9 @@ int main()
             t.AddNode(&n4, t.root);
             t.AddNode(&n3, t.root);
             cout << t.FindStudent(6, t.root);
-        }*/
+        }
+
+
     {
         ComplexNumber object1 = ComplexNumber();
         ComplexNumber res1 = ComplexNumber();
@@ -261,7 +288,7 @@ int main()
 
     cout << " \n Current Number Of objects :   " << ComplexNumber::counter << "\n";
         
-   
+   */
     
 }
 
