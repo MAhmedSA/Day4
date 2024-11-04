@@ -1,1 +1,1 @@
-# Day6(Inheritance Types With Practices);
+# Day7(Inheritance Types With Practices);
