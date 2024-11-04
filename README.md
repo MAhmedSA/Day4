@@ -1,1 +1,1 @@
-# Day6(Association,Aggregation,Composition,Inheritance);
+# Day6(Inheritance Types With Practices);
